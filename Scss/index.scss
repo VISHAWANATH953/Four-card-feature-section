@@ -11,6 +11,7 @@ p{
 }
 
 header{
+    margin-top: 1.5rem;
     min-height: 20vh;
     text-align: center;
     h1.hGray{
@@ -20,23 +21,34 @@ header{
 }
 
 main{
-    align-content: center;
     justify-content: center;
-    min-height: 75vh;
+    min-height: 73vh;
     display: flex;
     flex-flow: row wrap;
     section{
+        position: relative;
         width: 25rem;
         height: 15rem;
         padding: 0.2rem;
+        img{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            transform: translate(-.7rem, -.3rem);
+        }
+    }
+    .sup,.TB,.kar,.Calc{
+        padding: 1rem 2rem;
+        box-shadow: .1rem .1rem .5rem .1rem rgba(0, 0, 0, 0.4);
     }
     .sup{
-        margin: auto 2rem;
+        margin-right: .5rem;
         border-top: .2rem solid $Cyan;
         align-self: center;
         justify-self: flex-start;
     }
     .TB{
+        margin: .4rem auto;
         border-top: .2rem solid $Red;
         align-self: flex-start;
         justify-self: center;
@@ -48,6 +60,7 @@ main{
         
     }
     .Calc{
+        margin-left: .7rem;
         border-top: .2rem solid $Blue;
         align-self: center;
         justify-self: flex-end;
