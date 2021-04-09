@@ -1,0 +1,19 @@
+@media screen and(max-width:762px) {
+    html{
+        font-size: 85%;
+    }
+    main{
+        min-height: 110vh;
+
+        .TBKar{
+            height: 60vh;
+            
+        }
+        
+        .sup,.TB,.kar,.Calc{
+            margin: 0;
+            align-self: inherit;
+            justify-self: inherit;
+        }
+    }
+}

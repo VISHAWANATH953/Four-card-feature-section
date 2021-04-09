@@ -37,9 +37,9 @@ main{
             transform: translate(-.7rem, -.3rem);
         }
     }
-    .sup,.TB,.kar,.Calc{
+    .sup,.TBKar .TB,.TBKar .kar,.Calc{
         padding: 1rem 2rem;
-        box-shadow: .1rem .1rem .5rem .1rem rgba(0, 0, 0, 0.4);
+        box-shadow: .1rem .1rem .5rem .1rem rgba(0, 0, 0, 0.4),-.1rem -.1rem 1rem rgba(0, 0, 0, 0.4);
     }
     .sup{
         margin-right: .5rem;
@@ -47,6 +47,8 @@ main{
         align-self: center;
         justify-self: flex-start;
     }
+    .TBKar{
+        
     .TB{
         margin: .4rem auto;
         border-top: .2rem solid $Red;
@@ -57,7 +59,9 @@ main{
         border-top: .2rem solid $Orange;
         align-self: flex-end;
         justify-self: center;
+        margin-bottom: .5rem;
         
+    }
     }
     .Calc{
         margin-left: .7rem;

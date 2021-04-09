@@ -66,10 +66,10 @@ main section img {
           transform: translate(-0.7rem, -0.3rem);
 }
 
-main .sup, main .TB, main .kar, main .Calc {
+main .sup, main .TBKar .TB, main .TBKar .kar, main .Calc {
   padding: 1rem 2rem;
-  -webkit-box-shadow: 0.1rem 0.1rem 0.5rem 0.1rem rgba(0, 0, 0, 0.4);
-          box-shadow: 0.1rem 0.1rem 0.5rem 0.1rem rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0.1rem 0.1rem 0.5rem 0.1rem rgba(0, 0, 0, 0.4), -0.1rem -0.1rem 1rem rgba(0, 0, 0, 0.4);
+          box-shadow: 0.1rem 0.1rem 0.5rem 0.1rem rgba(0, 0, 0, 0.4), -0.1rem -0.1rem 1rem rgba(0, 0, 0, 0.4);
 }
 
 main .sup {
@@ -81,7 +81,7 @@ main .sup {
   justify-self: flex-start;
 }
 
-main .TB {
+main .TBKar .TB {
   margin: .4rem auto;
   border-top: 0.2rem solid #ea5353;
   -ms-flex-item-align: start;
@@ -90,12 +90,13 @@ main .TB {
       justify-self: center;
 }
 
-main .Kar {
+main .TBKar .Kar {
   border-top: 0.2rem solid #fcaf4a;
   -ms-flex-item-align: end;
       align-self: flex-end;
   -ms-grid-column-align: center;
       justify-self: center;
+  margin-bottom: .5rem;
 }
 
 main .Calc {
@@ -109,5 +110,25 @@ main .Calc {
 
 footer {
   text-align: center;
+}
+
+@media screen and (max-width: 762px) {
+  html {
+    font-size: 85%;
+  }
+  main {
+    min-height: 110vh;
+  }
+  main .TBKar {
+    height: 60vh;
+  }
+  main .sup, main .TB, main .kar, main .Calc {
+    margin: 0;
+    -ms-flex-item-align: inherit;
+        -ms-grid-row-align: inherit;
+        align-self: inherit;
+    -ms-grid-column-align: inherit;
+        justify-self: inherit;
+  }
 }
 /*# sourceMappingURL=index.css.map */
