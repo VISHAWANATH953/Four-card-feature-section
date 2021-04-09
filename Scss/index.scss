@@ -1,0 +1,60 @@
+@import "patials/_var";
+@import "patials/_utility";
+
+h1,h3{
+    color: $DarkBlue;
+    font-weight: 600;
+}
+p{
+    color: $GrayishBlue;
+    font-weight: 200;
+}
+
+header{
+    min-height: 20vh;
+    text-align: center;
+    h1.hGray{
+        color: $GrayishBlue;
+        font-weight: 400;
+    }
+}
+
+main{
+    align-content: center;
+    justify-content: center;
+    min-height: 75vh;
+    display: flex;
+    flex-flow: row wrap;
+    section{
+        width: 25rem;
+        height: 15rem;
+        padding: 0.2rem;
+    }
+    .sup{
+        margin: auto 2rem;
+        border-top: .2rem solid $Cyan;
+        align-self: center;
+        justify-self: flex-start;
+    }
+    .TB{
+        border-top: .2rem solid $Red;
+        align-self: flex-start;
+        justify-self: center;
+    }
+    .Kar{
+        border-top: .2rem solid $Orange;
+        align-self: flex-end;
+        justify-self: center;
+        
+    }
+    .Calc{
+        border-top: .2rem solid $Blue;
+        align-self: center;
+        justify-self: flex-end;
+    }
+}
+footer{
+    text-align: center;
+}
+
+@import "patials/_media";
